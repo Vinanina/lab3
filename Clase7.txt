@@ -1,0 +1,41 @@
+boostrap validator
+
+
+bower -> primero se intala node
+
+C:\xampp\htdocs\Clase7>node -v
+
+v7.2.0
+
+
+C:\xampp\htdocs\Clase7>bower -v
+
+1.8.0
+
+
+C:\xampp\htdocs\Clase7>npm install bower -g
+C:\xampp\htdocs\Clase7>bower init
+
+
+local storage y session storage
+
+coleccion de clave - valor(string)
+
+session storage -> muere al cerrar el navegador
+
+local storae -> se borra cuando se dice
+
+--validacion si esta el local storage
+if(typeof(storage != "undefined"))
+{
+	localStorage.setItem("Autor","Mariano");//localStorage.autor."Mariano": 
+	var autor= loaclStorage.getItem("autor");
+
+	loaclStorage.removeItem("autor");
+
+}else{
+
+	alert("no esta instalado");
+}	
+
+
